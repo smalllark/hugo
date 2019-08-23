@@ -1,7 +1,7 @@
-FROM alpine:3.6
+FROM alpine:3.10
 LABEL maintainer="smalllark@gmail.com"
 
-ENV HUGO_VERSION 0.30.2
+ENV HUGO_VERSION 0.57.2
 ENV HUGO_RESOURCE hugo_${HUGO_VERSION}_Linux-64bit
 
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_RESOURCE}.tar.gz /tmp/
