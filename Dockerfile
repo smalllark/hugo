@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM phusion/baseimage:0.11
 LABEL maintainer="smalllark@gmail.com"
 
 ENV HUGO_VERSION 0.57.2
