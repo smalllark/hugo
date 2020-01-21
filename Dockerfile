@@ -1,7 +1,7 @@
 FROM phusion/baseimage:0.11
 LABEL maintainer="smalllark@gmail.com"
 
-RUN apt install -y git
+RUN apt-get install -y git
 
 ENV HUGO_VERSION 0.62.2
 ENV HUGO_RESOURCE hugo_extended_${HUGO_VERSION}_Linux-64bit
