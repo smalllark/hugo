@@ -1,8 +1,9 @@
-FROM phusion/baseimage:0.11
+FROM mhart/alpine-node:14
 LABEL maintainer="smalllark@gmail.com"
 
-RUN apt update && apt upgrade -y -o Dpkg::Options::="--force-confold" && \
-    apt-get install -y git nodejs npm && npm install -g postcss-cli autoprefixer
+RUN apk update && apk upgrade && \
+    apk add --no-cache git && \
+    npm install -g postcss-cli autoprefixer
 
 ENV HUGO_VERSION 0.81.0
 ENV HUGO_RESOURCE hugo_extended_${HUGO_VERSION}_Linux-64bit
